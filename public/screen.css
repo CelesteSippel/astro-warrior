@@ -10,3 +10,116 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.primary-text-color {
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-purple {
+  background-color: rgb(81, 51, 166);
+}
+
+.sdg-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-stretch: 100%;
+  line-height: 25px;
+  padding: 8px;
+}
+
+.sdg-title a {
+  text-decoration: none;
+}
+.light-text-color {
+  color: rgb(254, 254, 254);
+}
+
+nav.side-menu a {
+  padding: 1.25rem;
+}
+.side-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.daily-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8.5rem;
+}
+
+.image-text {
+  font-size: 2rem;
+  color: white;
+}
+.credit {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+}
+
+.accent-color {
+  background-color: rgb(254, 192, 47);
+}
+
+.launches {
+  display: flex;
+  flex-direction: row;
+}
+
+.upcoming-launches h2 {
+  margin: 0;
+  padding-top: 1rem;
+  padding-right: 0rem;
+  padding-bottom: 1rem;
+  padding-left: 0.05rem;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.mission-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.light-violet {
+  background-color: rgb(209, 197, 232);
+}
+
+footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
