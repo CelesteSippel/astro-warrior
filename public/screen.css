@@ -137,3 +137,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.left {
+  border-radius: 0 1rem 1rem 0rem;
+}
+
+.right {
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+.arrow {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0rem 8rem 0rem;
+  background-color: rgb(254, 192, 47);
+  font-size: 2rem;
+}

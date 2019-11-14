@@ -20,4 +20,15 @@ const changePicture = async () => {
   document.querySelector('.title').textContent = json.title
 }
 
+const getCurrentSpaceXInfo = async () => {
+  const response = await fetch(
+    'https://sdg-astro-api.herokuapp.com/api/SpaceX/launches/upcoming'
+  )
+  const results = await response.json()
+  console.log(results)
+  missions = results
+  console.log(missions)
+  currentMissionInfo()
+}
+
 document.addEventListener('DOMContentLoaded', main)
