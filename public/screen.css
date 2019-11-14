@@ -88,15 +88,29 @@ nav.side-menu a {
   flex-direction: row;
 }
 
-.upcoming-launches h2 {
+.upcoming-launches {
   margin: 0;
-  padding-top: 1rem;
-  padding-right: 0rem;
-  padding-bottom: 1rem;
-  padding-left: 0.05rem;
+  padding: 1rem 0 1rem 0.5rem;
+  background-color: rgb(254, 192, 47);
 }
 
-h2 {
+.launches {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.launch-info {
+  margin: 1rem 3rem;
+  padding-bottom: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  flex-basis: 80%;
+  background-color: rgb(237, 237, 237);
+}
+/* h2 {
   display: block;
   font-size: 1.5rem;
   margin-block-start: 0.83em;
@@ -104,7 +118,7 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-}
+} */
 
 .mission-statement {
   display: flex;

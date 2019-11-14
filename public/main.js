@@ -17,7 +17,7 @@ const changePicture = async () => {
   } else {
     document.querySelector('.copyright').textContent = 'no copyright'
   }
-  document.querySelector('.copyright').textContent = json.title
+  document.querySelector('.title').textContent = json.title
 }
 
 document.addEventListener('DOMContentLoaded', main)
