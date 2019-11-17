@@ -1,5 +1,12 @@
 :root {
   font: 16px / 1 sans-serif;
+  --purple: #512da8;
+  --yellow: #fec109;
+  --light-gray: #ededed;
+  --dark-gray: #a9a9a9;
+  --gray: #ccc;
+  --lavender: #d1c4e9;
+  --white: #ffffff;
 }
 
 html {
@@ -9,56 +16,39 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: var(--purple);
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  padding: 0.5rem 0rem;
+  margin: 0.5rem;
+  font-weight: normal;
+  color: var(--white);
+}
+
+.sub-nav .about,
+.contact-us {
+  padding: 1.25rem;
+  color: var(--white);
+}
 .main-section {
   display: flex;
   flex-direction: column;
 }
-nav {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.primary-text-color {
-  color: black;
-}
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dark-purple {
-  background-color: rgb(81, 51, 166);
-}
-
-.sdg-title {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 28px;
-  font-stretch: 100%;
-  line-height: 25px;
-  padding: 8px;
-}
-
-.sdg-title a {
-  text-decoration: none;
-}
-.light-text-color {
-  color: rgb(254, 254, 254);
-}
-
-nav.side-menu a {
-  padding: 1.25rem;
-}
-.side-menu {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.daily-picture {
+.daily-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,30 +60,24 @@ nav.side-menu a {
 
 .image-text {
   font-size: 2rem;
-  color: white;
+  color: var(--white);
 }
-.credit {
-  width: 100%;
+
+.picture-credits {
+  font-size: 0.75rem;
   text-align: center;
-  font-size: 0.8em;
-  color: black;
 }
 
-.accent-color {
-  background-color: rgb(254, 192, 47);
-}
-
-.launches {
-  display: flex;
-  flex-direction: row;
+.image-copyright,
+.mission-statement {
+  text-align: center;
 }
 
 .upcoming-launches {
   margin: 0;
   padding: 1rem 0 1rem 0.5rem;
-  background-color: rgb(254, 192, 47);
+  background-color: var(--yellow);
 }
-
 .launches {
   display: flex;
   flex-direction: row;
@@ -108,17 +92,66 @@ nav.side-menu a {
   padding-right: 0.5rem;
   border-radius: 0.5rem;
   flex-basis: 80%;
-  background-color: rgb(237, 237, 237);
+  background-color: var(--light-gray);
 }
-/* h2 {
-  display: block;
-  font-size: 1.5rem;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-} */
+
+.launch-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.launch-card-info p {
+  padding-left: 0.5rem;
+}
+
+.launch-title {
+  align-self: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: black;
+}
+
+.launch-title h3 {
+  padding-left: 0.5rem;
+}
+
+.launch-description {
+  padding-bottom: 0.75rem;
+  border-bottom: var(--dark-gray) 1px solid;
+  display: flex;
+  align-items: baseline;
+}
+
+.description-launch {
+  padding-left: 0.75rem;
+}
+
+.launch-countdown,
+.launch-location {
+  padding: 0.75rem 0rem;
+  border-bottom: var(--dark-gray) 1px solid;
+  display: flex;
+  align-items: baseline;
+}
+.right-arrow,
+.left-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  font-size: 2rem;
+  width: 5rem;
+  margin: 8rem 0rem;
+}
+
+.left-arrow {
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.right-arrow {
+  border-radius: 1rem 0rem 0rem 1rem;
+}
 
 .mission-statement {
   display: flex;
@@ -126,31 +159,37 @@ nav.side-menu a {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-}
-.light-violet {
-  background-color: rgb(209, 197, 232);
+  background-color: var(--lavender);
 }
 
-footer {
+.title {
+  margin-bottom: 0rem;
+}
+.paragraph {
+  margin-bottom: 3rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--purple);
+  color: var(--gray);
 }
 
-.left {
-  border-radius: 0 1rem 1rem 0rem;
+.sdg-link {
+  color: var(--gray);
 }
 
-.right {
-  border-radius: 1rem 0rem 0rem 1rem;
+i {
+  padding-right: 0.25rem;
 }
-.arrow {
-  width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8rem 0rem 8rem 0rem;
-  background-color: rgb(254, 192, 47);
-  font-size: 2rem;
+
+@media (min-width: 320px) and (max-width: 421px) {
+  .sub-nav .about,
+  .contact-us {
+    padding: 0.5rem;
+    color: var(--white);
+  }
 }
